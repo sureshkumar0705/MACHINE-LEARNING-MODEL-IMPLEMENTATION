@@ -1,58 +1,66 @@
-# Machine learning 
 
-> Machine Learning algorithm implementations from scratch.
+# Machine Learning Model Implementation
 
-You can find Tutorials with the math and code explanations on my channel: [Here](https://www.youtube.com/playlist?list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E)
+This project demonstrates a basic implementation of a machine learning pipeline using Python. It covers data loading, preprocessing, training a Random Forest classifier, and evaluating its performance.
 
-## Algorithms Implemented
+## Features
 
-- KNN
-- Linear Regression
-- Logistic Regression
-- Naive Bayes
-- Perceptron
-- SVM
-- Decision Tree
-- Random Forest
-- Principal Component Analysis (PCA)
-- K-Means
-- AdaBoost
-- Linear Discriminant Analysis (LDA)
+- **Load Dataset:** Read a CSV file containing the dataset.
+- **Preprocess Data:** Handle missing values and encode categorical variables.
+- **Train-Test Split:** Divide data into training and testing subsets.
+- **Model Training:** Train a Random Forest Classifier.
+- **Model Evaluation:** Evaluate model performance using accuracy score.
 
-## Installation and usage.
+## Requirements
 
-This project has 2 dependencies.
+Install the required Python libraries before running the code:
 
-- `numpy` for the maths implementation and writing the algorithms
-- `Scikit-learn` for the data generation and testing.
-- `Matplotlib` for the plotting.
-- `Pandas` for loading data.
-
-**NOTE**: Do note that, Only `numpy` is used for the implementations. Others
-help in the testing of code, and making it easy for us, instead of writing that
-too from scratch.
-
-You can install these using the command below!
-
-```sh
-# Linux or MacOS
-pip3 install -r requirements.txt
-
-# Windows
-pip install -r requirements.txt
+```bash
+pip install numpy pandas scikit-learn
 ```
 
-You can run the files as following.
+## File Structure
 
-```sh
-python -m mlfromscratch.<algorithm-file>
+- `main.py`: Contains the full implementation of the ML pipeline.
+- `path/to/your/dataset.csv`: Example placeholder for your dataset.
+
+## How to Use
+
+1. Clone this repository.
+2. Replace `path/to/your/dataset.csv` with the path to your dataset.
+3. Set the `target_column` variable to the name of the target column in your dataset.
+4. Run the script:
+
+```bash
+python main.py
 ```
 
-with `<algorithm-file>` being the valid filename of the algorithm without the extension.
+## Example
 
-For example, If I want to run the Linear regression example, I would do 
-`python -m mlfromscratch.linear_regression`
+Assuming you have a dataset called `data.csv` with a target column named `target`, update the file path and column name in the code:
 
-## Watch the Playlist
+```python
+file_path = "data.csv"
+target_column = "target"
+```
 
-[![Alt text](https://img.youtube.com/vi/ngLyX54e1LU/hqdefault.jpg)](https://www.youtube.com/watch?v=ngLyX54e1LU&list=PLqnslRFeH2Upcrywf-u2etjdxxkL8nl7E)
+Run the script to see the model's accuracy printed to the console:
+
+```bash
+Model Accuracy: 85.67%
+```
+
+## Error Handling
+
+The program includes error handling for:
+
+- Missing or invalid file paths.
+- Empty or improperly formatted datasets.
+- Columns with entirely missing values.
+- Missing target column.
+
+## Future Enhancements
+
+- Support for hyperparameter tuning.
+- Add feature importance visualization.
+- Extend support to other classification algorithms.
