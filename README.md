@@ -1,4 +1,4 @@
-# ML algorithms from Scratch!
+# Machine learning 
 
 > Machine Learning algorithm implementations from scratch.
 
