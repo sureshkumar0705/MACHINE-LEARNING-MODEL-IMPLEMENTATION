@@ -1,5 +1,18 @@
 
-# Machine Learning Model Implementation
+# Machine Learning Model Implementation  
+
+**Company**: CODETECH IT SOLUTIONS  
+
+**Name**  : SURESH KUMAR P 
+
+**Id**: CT08HDL
+
+**Domain**: PYTHON PROGRAMMING
+
+**Batch Duration**: Dec 30th 2024 to Jan 30th, 2025 
+
+**Mentor Name** : NEELA SANTHOSH
+
 
 This project demonstrates a basic implementation of a machine learning pipeline using Python. It covers data loading, preprocessing, training a Random Forest classifier, and evaluating its performance.
 
